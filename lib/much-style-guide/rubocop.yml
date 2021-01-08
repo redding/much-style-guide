@@ -30,6 +30,8 @@ Layout/LineLength:
     - !ruby/regexp /\A\s*module {?\w+(?:::\w+)+}?\z/
     - !ruby/regexp /\A\s*class {?\w+(?:::\w+)+}?\z/
     - !ruby/regexp /\A\s*include {?\w+(?:::\w+)+}?\z/
+    # Links
+    - !ruby/regexp /\A\s*#\s*http.*\z/
 
 Layout/MultilineArrayBraceLayout:
   EnforcedStyle: new_line
