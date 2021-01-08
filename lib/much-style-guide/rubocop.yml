@@ -1,0 +1,173 @@
+inherit_from:
+  - ./rubocop_shopify-v1.0.7.yml
+
+require:
+  - rubocop-performance
+
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+##### LAYOUT #####
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+
+Layout/FirstParameterIndentation:
+  IndentationWidth: 6
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: key
+  EnforcedColonStyle: key
+
+Layout/LineLength:
+  Max: 80
+  IgnoredPatterns:
+    # Long, name-spaced modules, classes, or includes
+    - !ruby/regexp /\A\s*module {?\w+(?:::\w+)+}?\z/
+    - !ruby/regexp /\A\s*class {?\w+(?:::\w+)+}?\z/
+    - !ruby/regexp /\A\s*include {?\w+(?:::\w+)+}?\z/
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  EnforcedStyle: same_line
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_first_parameter
+
+Layout/SpaceBeforeBlockBraces:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space
+
+##### LINT #####
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: false
+
+##### METRICS #####
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+##### NAMING #####
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: false
+
+Naming/FileName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/RescuedExceptionsVariableName:
+  PreferredName: ex
+
+##### STYLE #####
+
+Style/AccessorGrouping:
+  Enabled: false
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+  AllowBracesOnProceduralOneLiners: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/CommandLiteral:
+  EnforcedStyle: backticks
+  AllowInnerBackticks: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+# Needed to override Shopify setting.
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/ParenthesesAroundCondition:
+  AllowInMultilineConditions: true
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/RedundantParentheses:
+  Enabled: false
+
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/WordArray:
+  Enabled: false
