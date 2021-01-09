@@ -7,11 +7,18 @@ require:
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
+  SuggestExtensions: false
+  Exclude:
+    - "**/clirb.rb"
+    - "tmp/**/*.rb"
 
 ##### LAYOUT #####
 
 Layout/DotPosition:
   EnforcedStyle: leading
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true
 
 Layout/EmptyLineBetweenDefs:
   AllowAdjacentOneLineDefs: true
@@ -134,6 +141,9 @@ Style/EachWithObject:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
+Style/FormatString:
+  Enabled: false
+
 # Needed to override Shopify setting.
 Style/IfUnlessModifier:
   Enabled: true
@@ -149,6 +159,12 @@ Style/ParallelAssignment:
 
 Style/ParenthesesAroundCondition:
   AllowInMultilineConditions: true
+
+Style/Proc:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
 
 Style/RedundantBegin:
   Enabled: false
