@@ -39,6 +39,8 @@ Layout/LineLength:
     - !ruby/regexp /\A\s*include {?\w+(?:::\w+)+}?\z/
     # Links
     - !ruby/regexp /\A\s*#\s*http.*\z/
+    # Requires
+    - !ruby/regexp /\A\s*require\s+".+\z/
 
 Layout/MultilineArrayBraceLayout:
   EnforcedStyle: new_line
