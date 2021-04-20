@@ -198,5 +198,8 @@ Style/TrailingCommaInArrayLiteral:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 
+Style/TrivialAccessors:
+  Enabled: false
+
 Style/WordArray:
   Enabled: false
