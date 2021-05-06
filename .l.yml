@@ -3,6 +3,7 @@
 linters:
   - name: "Rubocop"
     cmd: "rubocop"
+    autocorrect_cmd: "rubocop -a"
     extensions:
       - ".rb"
     cli_abbrev: "u"
