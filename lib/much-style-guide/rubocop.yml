@@ -137,6 +137,15 @@ Style/CommandLiteral:
   EnforcedStyle: backticks
   AllowInnerBackticks: true
 
+Style/CollectionMethods:
+  PreferredMethods:
+    collect: map
+    collect!: map!
+    inject: reduce
+    detect: find
+    find_all: select
+    member?: include
+
 Style/Documentation:
   Enabled: false
 
