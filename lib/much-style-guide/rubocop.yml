@@ -45,6 +45,9 @@ Layout/LineLength:
 Layout/MultilineArrayBraceLayout:
   EnforcedStyle: new_line
 
+Layout/MultilineAssignmentLayout:
+  EnforcedStyle: new_line
+
 Layout/MultilineHashBraceLayout:
   EnforcedStyle: new_line
 
