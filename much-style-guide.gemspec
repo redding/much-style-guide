@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = "~> 2.5"
 
-  gem.add_development_dependency("assert", ["~> 2.19.2"])
+  gem.add_development_dependency("assert", ["~> 2.19.6"])
 
   gem.add_dependency("rubocop",             ["~> 1.7.0"])
   gem.add_dependency("rubocop-performance", ["~> 1.9.2"])
