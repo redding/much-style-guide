@@ -4,6 +4,10 @@ inherit_from:
 require:
   - rubocop-performance
 
+inherit_mode:
+  merge:
+    - Include
+
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
