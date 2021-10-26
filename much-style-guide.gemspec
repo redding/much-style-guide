@@ -21,10 +21,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = "~> 2.5"
+  gem.required_ruby_version = ">= 2.5"
 
   gem.add_development_dependency("assert", ["~> 2.19.6"])
 
-  gem.add_dependency("rubocop",             ["~> 1.7.0"])
-  gem.add_dependency("rubocop-performance", ["~> 1.9.2"])
+  gem.add_dependency("rubocop",             ["~> 1.22.0"])
+  gem.add_dependency("rubocop-performance", ["~> 1.11.2"])
 end
